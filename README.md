@@ -2,14 +2,14 @@
 Assignment of COMP.6210
 
 Guidelines:
-Download all Files
-Import database.sql into new created Database
-Change Username, Password, Database name in connection.php
-Run the Files
+   1. Download all Files,
+   2. Import database.sql into new created Database,
+   3. Change Username, Password, Database name in connection.php,
+   4. Run the Files
 
 Features:
-Insert Form
-Select all data of table by use query
-Search data form table
-Pagination use for fetch all records on single page
+  1. Insert Form,
+  2. Select all data of table by use query,
+  3. Search data form table,
+  4. Pagination use for fetch all records on single page
 
