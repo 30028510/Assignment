@@ -11,14 +11,14 @@
       <!-- Form Name -->
       <div class="form-group">
          <label class="col-md-4 control-label">
-            <h3><b>Create New Item</b></h3>
+            <h3><b>Create New Subject</b></h3>
          </label>
       </div>
       <!-- Text input-->
       <div class="form-group">
-         <label class="col-md-2 control-label">Item Name: </label>  
+         <label class="col-md-2 control-label">Subject Name: </label>  
          <div class="col-md-4">
-            <input id="item_name" name="item_name" placeholder="Please Enter Item Name" class="form-control input-md" type="text" required >
+            <input id="item_name" name="item_name" placeholder="Please Enter Subject Name" class="form-control input-md" type="text" required >
          </div>
          <label class="col-md-1 control-label" for="object_class">Object Class: </label>  
          <div class="col-md-4">

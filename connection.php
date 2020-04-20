@@ -18,7 +18,7 @@
         }
         $no_of_records_per_page = 3;
         $offset = ($pageno-1) * $no_of_records_per_page;
-     $total_pages_sql = "SELECT COUNT(*) FROM up_table";
+     $total_pages_sql = "SELECT COUNT(*) FROM up_table ORDER BY Sno DESC";
         $result = mysqli_query($connection,$total_pages_sql);
         $total_rows = mysqli_fetch_array($result)[0];
         $total_pages = ceil($total_rows / $no_of_records_per_page);
@@ -40,7 +40,7 @@
      $discription = $_POST['discription'];
      $references = $_POST['references'];
    
-     $connection->query("insert into up_table (Item_Name,Object_Class,Image,Procedures,Description,Reference) values('$item_name','$object_class','$image_up','$procedure','$discription','$references')")
+     $connection->query("insert into up_table(Item_Name,Object_Class,Image,Procedures,Description,Reference) values('$item_name','$object_class','$image_up','$procedure','$discription','$references')")
        or die($connection->error);
        ?>
        <div class="alert alert-success">
@@ -54,7 +54,7 @@
    
    if(isset($_POST['search']))
    {     $search_record = $_POST['search_type'];
-         $search_match_record = $connection->query("select * from up_table where Item_Name LIKE '$search_record%'") or die($connection->error); 
+         $search_match_record = $connection->query("select * from up_table where Item_Name LIKE '$search_record%' ORDER BY Sno DESC") or die($connection->error); 
          
      }   else { //echo "No";
      }

@@ -20,10 +20,10 @@
 
     <div class="w3-container" style="background-color: gainsboro;">
 	<h5><b style="color: #D43F3A; font-size: 17px;">Object Class:</b> <span class="w3-opacity"><?php echo $row['Object_Class']; ?></span></h5>
-      <h5><b style="color: #D43F3A; font-size: 17px;">Procedures:</b> <span class="w3-opacity" style="font-size: 16px;   text-align: justify;"><?php $Procedures= $row['Procedures']; echo $small = substr($Procedures, 0, 300); ?>...</span></h5>
+      <h5><b style="color: #D43F3A; font-size: 17px;">Procedures:</b> <span class="w3-opacity" style="font-size: 16px;   text-align: justify;"><?php $Procedures= $row['Procedures']; echo $small = substr($Procedures, 0, 281); ?>...</span></h5>
       <div class="w3-row">
         <div class="w3-col m8 s12">       
-		  <form name="submit" method="post" action="http://localhost/pataanai/full_record.php/?id=<?php echo $row['Sno']; ?>">
+		  <form name="submit" method="post" action="https://30028510.2020.labnet.nz/assignment/full_record.php/?id=<?php echo $row['Sno']; ?>">
 		     <input type="submit" class="btn btn-danger navbar-btn"name="submit" value="Read More >>">
 		  </form>
         </div>

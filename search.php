@@ -4,7 +4,7 @@
 <?php if (mysqli_num_rows($search_match_record) > 0) { 
        while($row = $search_match_record->fetch_assoc()): ?>
 <!-- Grid -->
-<div class="w3-row">
+<div class="w3-row w3-container w3-dark-grey w3-padding-32 w3-margin-top">
    <!-- Blog entries -->
    <div class="w3-col 12">
       <!-- Blog entry -->
@@ -18,7 +18,7 @@
                $description= $row['Description'];
                $reference= $row['Reference'];?>
             <?php if (!empty($item_name)) { ?>
-            <h3><b style="color: #D43F3A; ">Item #:</b>  <?php echo $item_name; ?></h3>
+            <h3><b style="color: #D43F3A; ">Subject Name:</b>  <?php echo $item_name; ?></h3>
             <?php } ?>
             <?php if (!empty($object_class)) { ?>
             <h5><b style="color: #D43F3A; ">Object Class:</b> <span class="w3-opacity"><?php echo $object_class; ?></span></h5>
